@@ -1,0 +1,3 @@
+#boxDashboard:hover, #boxStudents:hover, #boxCourses:hover, #boxRegistrations:hover, #boxPayments:hover, #boxUsers:hover, #boxLogins:hover {
+    -fx-background-color: #aa0000;
+}

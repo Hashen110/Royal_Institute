@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.institute.controller.RegistrationController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="58.0" layoutY="14.0" text="Total Registrations">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalRegistrations" layoutX="124.0" layoutY="50.0" text="000">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="450.0" layoutY="25.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="50.0" layoutY="14.0" text="Today Registrations">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodayRegistrations" layoutX="118.0" layoutY="54.0" text="000">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="875.0" layoutY="25.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="31.0" layoutY="14.0" text="Yesterday Registrations">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblYesterdayRegistrations" layoutX="126.0" layoutY="54.0" text="000">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="950.0" layoutY="750.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="lblDateTime" layoutX="47.0" layoutY="14.0" text="2020-09-23 19:38:00" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableRegistration" layoutX="25.0" layoutY="200.0" prefHeight="400.0" prefWidth="1150.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Id" />
+            <TableColumn prefWidth="75.0" text="Date" />
+            <TableColumn prefWidth="75.0" text="Fee" />
+            <TableColumn prefWidth="75.0" text="Payment" />
+            <TableColumn prefWidth="75.0" text="Student" />
+            <TableColumn prefWidth="75.0" text="Course" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnAddRegistration" layoutX="25.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnAddRegistrationOnAction" prefHeight="39.0" prefWidth="257.0" style="-fx-background-color: #ee0000;" text="Add Registration" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditRegistration" layoutX="332.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnEditRegistrationOnAction" prefHeight="39.0" prefWidth="250.0" style="-fx-background-color: #ee0000;" text="Edit Registration" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblTableCount" layoutX="25.0" layoutY="600.0" text="No Of Rows : 0" />
+   </children>
+</AnchorPane>

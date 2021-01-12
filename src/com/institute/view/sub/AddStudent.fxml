@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="736.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.institute.controller.sub.AddStudentController">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="800.0" style="-fx-background-color: #aa0000;">
+         <children>
+            <Label layoutX="307.0" layoutY="26.0" text="Add Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="100.0" text="Id : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="151.0" text="Name : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="202.0" text="Address : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="253.0" text="Contact : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="304.0" text="Birthday : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="355.0" text="Gender : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" disable="true" layoutX="275.0" layoutY="94.0" prefHeight="33.0" prefWidth="151.0" promptText="Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="275.0" layoutY="145.0" promptText="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="275.0" layoutY="196.0" prefHeight="33.0" prefWidth="350.0" promptText="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="275.0" layoutY="247.0" prefHeight="33.0" prefWidth="236.0" promptText="Contact">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="datePickerBirthday" layoutX="275.0" layoutY="302.0" prefHeight="26.0" prefWidth="236.0" promptText="Birthday" />
+      <RadioButton fx:id="radioMale" layoutX="275.0" layoutY="354.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioFemale" layoutX="412.0" layoutY="354.0" mnemonicParsing="false" text="Female">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Separator layoutY="402.0" prefWidth="800.0" />
+      <Label layoutX="25.0" layoutY="427.0" text="Course : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxCourse" layoutX="275.0" layoutY="425.0" onAction="#comboBoxCourseOnAction" prefHeight="26.0" prefWidth="236.0" promptText="Course" />
+      <Separator layoutY="475.0" prefWidth="800.0" />
+      <Label layoutX="25.0" layoutY="500.0" text="Registration Fee : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRegistrationFee" layoutX="275.0" layoutY="494.0" onKeyReleased="#txtRegistrationFeeOnKeyReleased" promptText="Registration Fee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Separator layoutY="551.0" prefWidth="800.0" />
+      <Label layoutX="25.0" layoutY="576.0" text="Total : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="632.0" text="Discount : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="688.0" text="Net Total : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDiscount" layoutX="275.0" layoutY="626.0" onKeyReleased="#txtDiscountOnKeyReleased" prefHeight="26.0" prefWidth="236.0" promptText="Discount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblTotal" layoutX="279.0" layoutY="574.0" text="0.0 /=">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNetTotal" layoutX="279.0" layoutY="686.0" text="0.0 /=">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddStudent" layoutX="606.0" layoutY="672.0" mnemonicParsing="false" onAction="#btnAddStudentOnAction" style="-fx-background-color: #ff0000;" text="Add Student" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

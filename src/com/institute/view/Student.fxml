@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.institute.controller.StudentController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="52.0" layoutY="14.0" text="Total Students">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalStudents" layoutX="99.0" layoutY="50.0" text="000">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="475.0" layoutY="25.0" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="54.0" layoutY="14.0" text="Male Students">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMaleStudents" layoutX="99.0" layoutY="50.0" text="000">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="925.0" layoutY="25.0" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #eeeeee;">
+         <children>
+            <Label layoutX="41.0" layoutY="14.0" text="Female Students">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblFemaleStudents" layoutX="99.0" layoutY="50.0" text="000">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableStudent" layoutX="25.0" layoutY="200.0" prefHeight="400.0" prefWidth="1150.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id" />
+          <TableColumn prefWidth="75.0" text="Name" />
+            <TableColumn prefWidth="75.0" text="Address" />
+            <TableColumn prefWidth="75.0" text="Contact" />
+            <TableColumn prefWidth="75.0" text="Birthday" />
+            <TableColumn prefWidth="75.0" text="Gender" />
+            <TableColumn prefWidth="104.0" text="Date Joined" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="comboBoxStudent" layoutX="925.0" layoutY="164.0" onAction="#comboBoxStudentOnAction" prefHeight="26.0" prefWidth="250.0" promptText="All Students" />
+      <Button fx:id="btnAddStudent" layoutX="25.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnAddStudentOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #ee0000;" text="Add Student" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditStudent" layoutX="275.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnEditStudentOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #ee0000;" text="Edit Student" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="950.0" layoutY="750.0" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="lblDateTime" layoutX="47.0" layoutY="14.0" text="2020-09-23 19:38:00" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblTableCount" layoutX="25.0" layoutY="600.0" text="No Of Rows : 0" />
+      <Button fx:id="btnViewStudent" layoutX="525.0" layoutY="700.0" mnemonicParsing="false" onAction="#btnViewStudentOnAction" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #ee0000;" text="View Student" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

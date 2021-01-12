@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="621.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.institute.controller.sub.EditStudentController">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="800.0" style="-fx-background-color: #aa0000;">
+         <children>
+            <Label layoutX="309.0" layoutY="23.0" text="Edit Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="25.0" layoutY="242.0" text="Id : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="293.0" text="Name : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="344.0" text="Address : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="395.0" text="Contact : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="446.0" text="Birthday : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="497.0" text="Gender : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" disable="true" layoutX="250.0" layoutY="236.0" prefHeight="33.0" prefWidth="151.0" promptText="Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="250.0" layoutY="287.0" promptText="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="250.0" layoutY="338.0" prefHeight="33.0" prefWidth="350.0" promptText="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="250.0" layoutY="389.0" prefHeight="33.0" prefWidth="236.0" promptText="Contact">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="datePickerBirthday" layoutX="250.0" layoutY="444.0" prefHeight="26.0" prefWidth="236.0" promptText="Birthday" />
+      <RadioButton fx:id="radioMale" layoutX="250.0" layoutY="496.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioFemale" layoutX="387.0" layoutY="496.0" mnemonicParsing="false" text="Female">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="25.0" layoutY="128.0" text="Select Student : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxStudent" layoutX="250.0" layoutY="100.0" onAction="#comboBoxStudentOnAction" prefHeight="26.0" prefWidth="350.0" promptText="Select Student" />
+      <TextField fx:id="txtStudent" layoutX="250.0" layoutY="150.0" promptText="Select Student">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSelectStudent" layoutX="600.0" layoutY="154.0" mnemonicParsing="false" onAction="#btnSelectStudentOnAction" text=" Select Student" />
+      <Separator layoutY="208.0" prefWidth="800.0" />
+      <Button fx:id="btnEditStudent" layoutX="549.0" layoutY="548.0" mnemonicParsing="false" onAction="#btnEditStudentOnAction" style="-fx-background-color: #ff0000;" text="Edit Student" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
